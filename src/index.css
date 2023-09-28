@@ -1,18 +1,9 @@
-*{
-    box-sizing: content-box;
-}
-body{
-    background-color: rgb(254, 251, 246);
-}
-
-
-nav{
+/* nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 80px;
     background-color:wheat;
-    /* position: sticky; */
 }
 
 .nav__logo{
@@ -30,7 +21,7 @@ nav a{
 .nav__link{
     display: flex;
     gap: 30px;
-}
+} */
 
 .intro{
     display: flex;
@@ -126,7 +117,7 @@ nav a{
     color: black;
 }
 
-footer{
+/* footer{
     height: 100px;
     background-color: black;
     color: rgb(202, 201, 201);
@@ -138,4 +129,4 @@ footer{
 }
 .footer__git{
     width: 40px;
-}
+} */
