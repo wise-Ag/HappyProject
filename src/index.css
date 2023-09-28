@@ -5,29 +5,28 @@ body{
     background-color: rgb(254, 251, 246);
 }
 
-header{
-    position: sticky;
-    z-index: 1;
-}
-.nav{
+
+nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 80px;
     background-color:wheat;
-
+    /* position: sticky; */
 }
 
 .nav__logo{
     width: 80px;
     height: 60px;
 }
-
-.nav a{
+nav a{
     color: black;
     font-size: 20px;
 }
-
+.nav__walk{
+    color: rgb(99, 64, 0);
+    font-weight: 600;
+}
 .nav__link{
     display: flex;
     gap: 30px;
@@ -36,8 +35,6 @@ header{
 .intro{
     display: flex;
     justify-content: center;
-    /* margin: 20px; */
-    /* gap: 60px; */
 }
 .intro__description{
     display: flex;
@@ -66,7 +63,7 @@ header{
 .cards{
     display: flex;
     flex-direction: column;
-    gap: 80px;
+    gap: 100px;
     padding:80px 0;
     
 }
@@ -76,7 +73,7 @@ header{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 60px;
     background-color: rgb(254, 251, 246);
 }
 .card img{
@@ -86,15 +83,59 @@ header{
     border-radius: 10px;
 }
 .description{
-    width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 .card__title{
     font-size: 50px;
     font-weight: 700;
 
 }
-
+.card span{
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.hilight--friend{
+    background: linear-gradient(277deg, #1a930f 59.22%, #dab875 93.66%);
+}
+.hilight--happy{
+    background:linear-gradient(277deg, blue,orange);
+}
+.hilight--24hours{
+    background: linear-gradient(277deg,purple,rgb(188, 188, 1));
+}
 .card__description{
     font-size: 20px;
     color: gray;
+    line-height: 150%;
+}
+
+.card__btn{
+    background: linear-gradient(50deg,rgb(246, 161, 4) 30%, rgb(252, 208, 136));
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 22px;
+    padding: 16px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.card__btn:hover{
+    color: black;
+}
+
+footer{
+    height: 100px;
+    background-color: black;
+    color: rgb(202, 201, 201);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    font-size: 16px;
+}
+.footer__git{
+    width: 40px;
 }
