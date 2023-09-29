@@ -5,14 +5,18 @@ class Header extends HTMLElement{
     connectedCallback(){
         this.innerHTML=`
         <style>
-        
+        header-component{
+            position : sticky;
+            top : 0;
+            z-index:1;
+        }
         nav{
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 20px 80px;
             background-color:wheat;
-            /* position: sticky; */
+
         }
         
         .nav__logo{
@@ -37,7 +41,7 @@ class Header extends HTMLElement{
             <div class="nav__link">
                 <a href="/html/aboutHappy.html" class="nav__link__about-happy">About HAPPY</a>
                 <a href="/html/aboutMaltese.html" class="nav__link__about-maltese">About MALTESE</a>
-                <a href="" class="nav__link__friends">Friends</a>
+                <a href="/html/friends.html" class="nav__link__friends">Friends</a>
             </div>
             <a href="" class="nav__walk">함께 산책하기</a>
         </nav>
