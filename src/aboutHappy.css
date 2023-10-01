@@ -1,0 +1,97 @@
+main{
+    display: flex;
+    font-size: 22px;
+}
+.side-bar{
+    position: sticky;
+    left: 0; top: 106px;bottom:0;
+    padding: 0 20px;
+    background-color: rgb(235, 227, 216);
+    width: 22%;
+    overflow: scroll;
+    height: 800px;
+}
+.side-bar__cards{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.side-bar__card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.8px gray solid;
+    padding: 20px;
+    font-size: 18px;
+    gap: 10px;
+}
+.side-bar__card img{
+    width: 90px;
+    height: 90px;
+    border-radius: 8px;
+}
+.cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 50px;
+    padding: 50px;
+    line-height: 200%;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 30px;
+    border-bottom: #8d7544 0.8px solid;
+    gap: 60px;
+}
+.text-align-center{
+    text-align: center;
+}
+.card__intro__img{
+    width: 700px;
+    border-radius: 8px;
+   
+}
+.card__intro__content{
+    line-height: 300%; 
+}
+.highlight--happy{
+    background: linear-gradient(277deg,  #8d7544 10%,#145a0e 92%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.card__baby-happy{
+    gap: 50px;
+}
+.card__baby-happy__photos{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+
+}
+.card__baby-happy__photos img{
+    width: 400px;
+    border-radius: 16px;
+}
+
+.card__favor{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+.card__favor__img{
+    width: 500px;
+}
+.bold{
+    font-weight: 700;
+    font: size 25px;
+}
+.card__favor-walk__content{
+    text-align: end;
+}

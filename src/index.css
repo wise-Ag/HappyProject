@@ -4,7 +4,6 @@
     align-items: center;
     padding: 20px 80px;
     background-color:wheat;
-    position : sticky;
 }
 
 .nav__logo{
@@ -89,13 +88,13 @@ nav a{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.hilight--friend{
+.highlight--friend{
     background: linear-gradient(277deg, #1a930f 59.22%, #dab875 93.66%);
 }
-.hilight--happy{
+.highlight--happy{
     background:linear-gradient(277deg, blue,orange);
 }
-.hilight--24hours{
+.highlight--24hours{
     background: linear-gradient(277deg,purple,rgb(188, 188, 1));
 }
 .card__description{

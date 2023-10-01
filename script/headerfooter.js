@@ -26,6 +26,10 @@ class Header extends HTMLElement{
         nav a{
             color: black;
             font-size: 20px;
+            text-decoration-line:none;
+        }
+        nav a:hover{
+            color:brown;
         }
         .nav__walk{
             color: rgb(99, 64, 0);
