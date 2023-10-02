@@ -30,6 +30,16 @@ main{
     height: 90px;
     border-radius: 8px;
 }
+.side-bar a{
+    text-decoration: none;
+}
+
+.side-bar a:visited{
+   color:black
+}
+.side-bar a:hover{
+    color: brown;
+}
 .cards{
     display: flex;
     flex-direction: column;
