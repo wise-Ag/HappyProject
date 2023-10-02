@@ -1,31 +1,11 @@
-/* nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 80px;
-    background-color:wheat;
-}
-
-.nav__logo{
-    width: 80px;
-    height: 60px;
-}
-nav a{
-    color: black;
-    font-size: 20px;
-}
-.nav__walk{
-    color: rgb(99, 64, 0);
-    font-weight: 600;
-}
-.nav__link{
-    display: flex;
-    gap: 30px;
-} */
-
 .intro{
     display: flex;
     justify-content: center;
+}
+@media(max-width:767px){
+    .intro{
+        flex-direction: column;
+    }
 }
 .intro__description{
     display: flex;
@@ -42,13 +22,20 @@ nav a{
     background-size: 400%;
     
 }
+@media (max-width:767px) {
+    .intro__description{
+        width: 100%;
+        font-size: 32px;
+        padding: 30px;
+    }
+}
 .carousel{
-    height: 800px;
     width: 70%;
 }
-
-.carousel-item img{
-    height: 800px;
+@media (max-width:767px) {
+    .carousel{
+        width: 100%;
+    }
 }
 
 .cards{
@@ -67,21 +54,50 @@ nav a{
     gap: 60px;
     background-color: rgb(254, 251, 246);
 }
+@media (max-width:767px) {
+    .card{
+        display: grid;
+        grid-template-areas:
+        "card__title"
+        "card__img"
+        "card__description"
+        "card__btn"
+        ;
+        gap: 15px;
+    }
+    
+}
 .card img{
     width: 500px;
     height: 500px;
     background-size: cover;
     border-radius: 10px;
 }
+@media (max-width:767px) {
+    .card img{
+        grid-area : card__img;
+    }
+}
 .description{
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
+@media (max-width:767px) {
+    .description{
+        display: contents;
+    }
+}
 .card__title{
     font-size: 50px;
     font-weight: 700;
 
+}
+@media(max-width:767px){
+    .card__title{
+        grid-area: card__title;
+        font-size: 24px;
+    }
 }
 .card span{
     background-clip: text;
@@ -102,6 +118,12 @@ nav a{
     color: gray;
     line-height: 150%;
 }
+@media(max-width:767px){
+    .card__description{
+        grid-area: card__description;
+        font-size: 15px;
+    }
+}
 
 .card__btn{
     background: linear-gradient(50deg,rgb(246, 161, 4) 30%, rgb(252, 208, 136));
@@ -113,20 +135,13 @@ nav a{
     border-radius: 10px;
     cursor: pointer;
 }
+
 .card__btn:hover{
     color: black;
 }
-
-/* footer{
-    height: 100px;
-    background-color: black;
-    color: rgb(202, 201, 201);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 40px;
-    font-size: 16px;
+@media(max-width:767px){
+    .card__btn{
+        grid-area: card__btn;
+        font-size: 15px;
+    }
 }
-.footer__git{
-    width: 40px;
-} */
