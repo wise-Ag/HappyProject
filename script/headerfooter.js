@@ -23,6 +23,16 @@ class Header extends HTMLElement{
             width: 80px;
             height: 60px;
         }
+        @media(max-width:767px){
+            nav{
+                padding:20px 32px;
+            }
+            .nav__logo{
+            width:50px;
+            height:35px; 
+            }
+
+        }
         nav a{
             color: black;
             font-size: 20px;
@@ -139,8 +149,8 @@ class Footer extends HTMLElement{
         }
 
         @media(max-width:767px){
-            .footer{
-                font-size:15px;
+            footer{
+                font-size:10px;
             }
         }
         </style>
