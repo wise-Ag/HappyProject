@@ -42,6 +42,9 @@ class Header extends HTMLElement{
         nav-mobile{
             display : none;
         }
+        .mobile-menu-icon{
+            display : none;
+        }
         .display-block{
             display:block;
         }
@@ -78,6 +81,7 @@ class Header extends HTMLElement{
                 cursor:default;
             }
             .mobile-menu-icon{
+                display : block;
                 cursor:pointer;
             }
             .mobile-menu-icon-open{
