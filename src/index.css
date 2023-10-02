@@ -80,8 +80,8 @@
 }
 @media (max-width:767px) {
     .card img{
-        width: 300px;
-        height: 300px;
+        width: 400px;
+        height: 400px;
         grid-area : card__img;
     }
 }
