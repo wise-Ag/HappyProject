@@ -137,6 +137,12 @@ class Footer extends HTMLElement{
         .footer__git{
             width: 40px;
         }
+
+        @media(max-width:767px){
+            .footer{
+                font-size:15px;
+            }
+        }
         </style>
         <footer>
             <div class="footer__company">@JieunCorporation</div>
