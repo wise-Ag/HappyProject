@@ -39,17 +39,74 @@ class Header extends HTMLElement{
             display: flex;
             gap: 30px;
         }
+        nav-mobile{
+            display : none;
+        }
+        .display-block{
+            display:block;
+        }
+        @media(max-width:767px){
+            .pc-nav{display:none;}
+            nav-mobile{
+                width:50%;
+                height:100%;
+                background-color : rgb(235, 227, 216);
+                position : fixed;
+                top : 0;
+                right:0;
+            }
+            .menus{
+                display : flex;
+                flex-direction : column;
+                text-align: center;
+                font-size :24px;
+            }
+            .menus div{
+                padding:20px 0;
+                //border-bottom:black 1px solid;
+            }
+            .menus a{
+                color:rgb(159, 109, 29);
+            }
+            .menus a:hover{
+                color:brown;
+                text-decoration:none;
+            }
+            .menu-active{
+                background-color : white;
+                pointer-events:none;
+                cursor:default;
+            }
+            .mobile-menu-icon{
+                cursor:pointer;
+            }
+            .mobile-menu-icon-open{
+                cursor:pointer;
+                padding:30px
+            }
+
+        }
         </style>
         <nav>
             <a href="/index.html"><img class="nav__logo" src="/img/logo8.png" alt="강아지로고"></a>
             <div class="nav__link">
-                <a href="/html/aboutHappy.html" class="nav__link__about-happy">About HAPPY</a>
-                <a href="/html/aboutMaltese.html" class="nav__link__about-maltese">About MALTESE</a>
-                <a href="/html/friends.html" class="nav__link__friends">Friends</a>
+                <a class="pc-nav" href="/html/aboutHappy.html" class="nav__link__about-happy">About HAPPY</a>
+                <a class="pc-nav" href="/html/aboutMaltese.html" class="nav__link__about-maltese">About MALTESE</a>
+                <a class="pc-nav" href="/html/friends.html" class="nav__link__friends">Friends</a>
             </div>
-            <a href="" class="nav__walk">함께 산책하기</a>
+            <a href="" class="pc-nav" class="nav__walk">함께 산책하기</a>
+            <div class="mobile-menu-icon"><i class="fa fa-bars"></i></div>
         </nav>
-    
+        
+        <nav-mobile>
+            <div class="mobile-menu-icon-open"><i class="fa fa-bars"></i></div>
+            <div class="menus">
+                <div class="menu__home"><a href="/">Home</a></div>
+                <div class="menu__aboutHappy"><a href="/html/aboutHappy.html">About HAPPY</a></div>
+                <div class="menu__aboutMaltese"><a href="/html/aboutMaltese.html">About MALTESE</a></div>
+                <div class="menu__freinds"><a href="/html/friends.html">Friends</a></div>
+            </div>
+        </nav-mobile>
         `
     }
 }
